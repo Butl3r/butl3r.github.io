@@ -1,0 +1,6 @@
+name: Brad Mennen, Cyber Security Specialist
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
+collections:
+  category:
+    output: true
