@@ -58,8 +58,8 @@ wfuzz -w /usr/share/dirb/wordlists/common.txt http://TARGETIP/FUZZ.php
 wfuzz -hc 404 -c -z list,admin -z file,/path/to/wordlist.txt -d "user=FUZZ&password=FUZ2Z" \
 http://TARGETIP/path
 wfuzz -c --ntlm "username:FUZZ" -z file,/path/to/wordlist.txt -hc 401 http://$TARGETIP/path
-wfuzz -c -hc 404400,401 -z file,/path/to/usernames.txt -z file,/path/to/wordlist.txt --basic "FUZZ:FUZ2Z" \
--p 127.0.0.1:8080 http://TARGETIP/path
+wfuzz -c -hc 404400,401 -z file,/path/to/usernames.txt -z file,/path/to/wordlist.txt \
+--basic "FUZZ:FUZ2Z" -p 127.0.0.1:8080 http://TARGETIP/path
 ```
 
 [https://wfuzz.readthedocs.io/en/latest/user/basicusage.html](https://wfuzz.readthedocs.io/en/latest/user/basicusage.html)
