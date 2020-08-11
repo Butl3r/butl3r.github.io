@@ -1,0 +1,25 @@
+---
+layout: default
+tag: enumeration
+permalink: "/category/enumeration"
+title: Enumeration
+
+---
+
+<h1>{{ page.title }}</h1>
+
+<div class="general-posts list">
+    <ul class="posts">
+        {% for post in site.categories.enumeration %}
+        <li>
+            <a href="{{ post.url }}" title="{{ post.title }}">
+                <span>{{ post.title }}</span>
+                <br /><br />
+                {{ post.preview }}
+                <br />
+                <br />
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

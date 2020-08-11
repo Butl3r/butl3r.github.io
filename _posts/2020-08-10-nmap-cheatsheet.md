@@ -5,6 +5,8 @@ date: 2020-08-10
 preview: Cheatsheet of NMAP commands for active scanning a target
 categories: 
     - "commands"
+    - "pentest"
+    - "enumeration"
 ---
 
 NMAP active reconnaissance against target machine.

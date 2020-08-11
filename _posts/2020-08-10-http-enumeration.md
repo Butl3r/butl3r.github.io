@@ -5,6 +5,8 @@ date: 2020-08-10
 preview: Cheatsheet for HTTP enumeration for active scanning a website
 categories: 
     - "commands"
+    - "pentest"
+    - "enumeration"
 ---
 
 # Screenshot
