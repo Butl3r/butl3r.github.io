@@ -44,6 +44,7 @@ h1, h2, h3, h4, h5 {
 .sidebar {
     background: #0f4c75;
     color: #fff;
+    min-width: 200px;
 }
 
 .brand-title,
@@ -277,6 +278,10 @@ hr {
     background:#bbe1fa;
 }
 
+.brand-title img {
+    width: 20%;
+}
+
 @media (min-width: 48em) {
     .content {
         padding: 1em 2em 0;
@@ -286,6 +291,11 @@ hr {
     .header {
         margin: 30% 2em 0;
         text-align: right;
+    }
+
+    .photo img {
+        max-width: 150px;
+        width: 50%;
     }
 
     .sidebar {
