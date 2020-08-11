@@ -250,6 +250,33 @@ hr {
     display: none;
 }
 
+#search-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 96%;
+    margin-left: 3%;
+}
+
+#search-container ul li {
+    text-decoration: none;
+}
+
+#search-container ul li a {
+    background:#1b262c;
+    border: 1px solid #3282b8;
+    border-top: 0px;
+    text-decoration: none;
+    display: block;
+    padding: 7px;
+}
+
+#search-container ul li a:hover {
+    color: #000;
+    background:#bbe1fa;
+}
+
 @media (min-width: 48em) {
     .content {
         padding: 1em 2em 0;
