@@ -246,10 +246,14 @@ hr {
     font-size: 0.9em;
 }
 
+.desktop {
+    display: none;
+}
+
 @media (min-width: 48em) {
     .content {
         padding: 1em 2em 0;
-        margin-left: 25%;   /* Must match responsive % */
+        margin-left: 20%;   /* Must match responsive % */
     }
 
     .header {
@@ -276,7 +280,11 @@ hr {
     }
 
     .aboutpadding {
-        padding: 0px 25px;
+        padding: 0px 25px 0px 0px;
+    }
+
+    .desktop {
+        display: block;
     }
     
 }
