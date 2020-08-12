@@ -10,13 +10,31 @@ title: Brad Mennen, Cyber Security
 			<h2 class="heading">Latest Post <i class="fas fa-concierge-bell"></i></h2>
 			<div class="latest-post list">
 				{% for post in site.posts limit:1 %}
-				<a href="{{ post.url }}"><div><i class="fas fa-caret-right"></i>&nbsp;<span>{{ post.date | date_to_string }}</span> » {{ post.title }} » {{ post.preview }}</div></a>
+				<a href="{{ post.url }}">
+					<div>
+						<i class="fas fa-caret-right"></i>&nbsp;
+						<span>{{ post.date | date_to_string }}</span>
+						<i class="fas fa-angle-double-right"></i>&nbsp;
+						{{ post.title }}
+						<br /><br />
+						{{ post.preview }}
+					</div>
+				</a>
 				{% endfor %}
 			</div>
 			<h2 class="heading">Recent Posts</h2>
 			<div class="recent-post list">
 				{% for post in site.posts offset:1 limit:4 %}
-				<a href="{{ post.url }}"><div><i class="fas fa-caret-right"></i></i>&nbsp;<span>{{ post.date | date_to_string }}</span> » {{ post.title }} » {{ post.preview }}</div></a>
+				<a href="{{ post.url }}">
+					<div>
+						<i class="fas fa-caret-right"></i>&nbsp;
+						<span>{{ post.date | date_to_string }}</span>
+						<i class="fas fa-angle-double-right"></i>&nbsp;
+						{{ post.title }}
+						<br /><br />
+						{{ post.preview }}
+					</div>
+				</a>
 				{% endfor %}
 			</div>
 		</div>

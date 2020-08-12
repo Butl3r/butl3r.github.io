@@ -228,8 +228,28 @@ p {
     font-weight: bold;
 }
 
-.recent-post div {
+div.recent-post div {
     padding: 10px 0px;
+    border-bottom: 1px solid #3282b8;
+}
+
+div.recent-post {
+    padding: 10px 0px;
+    border-top: 1px solid #3282b8;
+}
+
+div.latest-post div {
+    padding: 10px 0px;
+}
+
+
+div.recent-post a, div.latest-post a {
+    display: block;
+    text-decoration: none;
+}
+
+div.recent-post a:hover, div.latest-post a:hover {
+    color: #bbe1fa;
 }
 
 div.highlight {
