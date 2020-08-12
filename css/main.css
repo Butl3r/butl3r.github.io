@@ -286,10 +286,24 @@ hr {
     overflow: auto;
 }
 
+.toc {
+    text-align: left;
+    display: none;
+}
+
+.is-active-link::before{
+    background-color:#1b262c;
+}
+
+
 @media (min-width: 48em) {
     .content {
         padding: 1em 2em 0;
         margin-left: 20%;   /* Must match responsive % */
+    }
+
+    .toc {
+        display: block;
     }
 
     .header {
