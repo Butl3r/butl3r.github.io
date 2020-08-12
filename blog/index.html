@@ -7,6 +7,7 @@ title: Blog
 	{% for post in site.posts %}
 	<li>
 		<a href="{{ post.url }}" title="{{ post.title }}">
+			<i class="fas fa-caret-right"></i>&nbsp;
 			<span>{{ post.date | date_to_string }} | {{ post.title }}</span>
 			<br /><br />
 			{{ post.preview }}
