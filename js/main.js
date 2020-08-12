@@ -13,5 +13,6 @@ tocbot.init({
     headingSelector: 'h1, h2',
     // For headings inside relative or absolute positioned containers within content.
     hasInnerContainers: true,
-    headingsOffset :  1
+    headingsOffset :  1,
+    scrollSmooth: true
 });

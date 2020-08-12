@@ -295,6 +295,19 @@ hr {
     background-color:#1b262c;
 }
 
+.pure-table th, .pure-table td {
+    border: 0;
+}
+
+.contactmetable {
+    text-align: left; 
+    border: 0; 
+    margin: 0 auto;
+}
+
+input, textarea {
+    color: #000;
+}
 
 @media (min-width: 48em) {
     .content {
