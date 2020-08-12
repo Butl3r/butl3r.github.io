@@ -282,6 +282,10 @@ hr {
     width: 20%;
 }
 
+.highlight {
+    overflow: auto;
+}
+
 @media (min-width: 48em) {
     .content {
         padding: 1em 2em 0;
