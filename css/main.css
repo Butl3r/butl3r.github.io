@@ -1,6 +1,7 @@
 body {
     background: #1b262c;
     color: #f7f4f4;
+    background-image: url("/images/background.png");
 }
 
 a {
