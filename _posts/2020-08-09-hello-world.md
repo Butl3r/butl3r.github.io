@@ -8,4 +8,3 @@ categories:
 ---
 
 Hello world!
-
