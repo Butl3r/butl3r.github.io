@@ -338,6 +338,22 @@ input, textarea {
     color: #000;
 }
 
+.highlight > pre > div{
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+.btn-copy{
+    color: #FFF;
+    background-color: #000;
+    border: 0;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.btn-copy:hover{
+    background-color: #3282b8;
+}
+
 @media (min-width: 48em) {
     .content {
         padding: 1em 2em 0;
