@@ -19,11 +19,24 @@ NMAP active reconnaissance against target machine.
 nmap -sC -sV -oA nmap/initial -vvv $TARGETIP | tee -a nmap.initial.txt
 ```
 
+## Syn scan
+
+```bash
+nmap -sS -p- -vvv $TARGETIP | tee -a nmap.tcpsyn.allports.txt
+```
+
+## TCP Ack
+
+```bash
+nmap -sA -p- -vvv $TARGETIP | tee -a nmap.tcpsyn.allports.txt
+```
+
 ## Scan all TCP Ports
 
 ```bash
 nmap -sT -p- -vvv $TARGETIP | tee -a nmap.tcp.allports.txt
 ```
+
 ## Scan all UDP Ports
 
 ```bash
@@ -34,6 +47,29 @@ nmap -sU -p- -vvv $TARGETIP | tee -a nmap.udp.allports.txt
 
 ```bash
 nmap -vvv -sT --top-ports 100 $TARGETIP | tee -a nmap.tcp.top100.txt
+```
+
+## Version of service
+
+```bash
+nmap -vvv -sV $TARGETIP | tee -a nmap.tcp.serviceversion.txt
+```
+
+## OS Version Detection
+
+```bash
+nmap -vvv -A $TARGETIP | tee -a nmap.tcp.serviceversion.txt
+```
+
+## Performance
+
+```bash
+-T0 - Paranoid (0) Intrusion Detection System evasion
+-T1 - Sneaky (1) Intrusion Detection System evasion
+-T2 - Polite (2) slows down the scan to use less bandwidth and use less target machine resources
+-T3 - Normal (3) which is default speed 
+-T4 - Aggressive (4) speeds scans; assumes you are on a reasonably fast and reliable network 
+-T5 - Insane (5) speeds scan; assumes you are on an extraordinarily fast network
 ```
 
 ## SNMP
