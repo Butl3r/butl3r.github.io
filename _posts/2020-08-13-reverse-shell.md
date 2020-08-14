@@ -6,7 +6,6 @@ preview: Cheatsheet for reverse shells
 categories: 
     - "commands"
     - "pentest"
-    - "enumeration"
 ---
 
 # Reverse Shells
