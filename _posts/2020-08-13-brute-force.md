@@ -1,7 +1,7 @@
 ---
 layout: commands
 title: Brute Force
-date: 2020-08-10
+date: 2020-08-13
 preview: Cheatsheet for brute force attacking
 categories: 
     - "commands"
@@ -188,7 +188,13 @@ Folder
 SSH private key
 
 ```bash
-/usr/share/john/ssh2john.py
+/usr/share/john/ssh2john.py id_rsa > johnhash
+```
+
+Brute force passphrase
+
+```bash
+john --wordlist=/path/to/wordlist johnhash
 ```
 
 Encrypted PDF
