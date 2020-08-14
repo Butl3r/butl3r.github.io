@@ -354,6 +354,19 @@ input, textarea {
     background-color: #3282b8;
 }
 
+.disclaimer {
+    font-size: 0.6em;
+    font-style: italic;
+    text-align: left;
+    padding: 10px;
+    padding-bottom: 0;
+    width: 90%;
+}
+
+.disclaimer span {
+    font-weight: bold;
+}
+
 @media (min-width: 48em) {
     .content {
         padding: 1em 2em 0;
@@ -365,7 +378,7 @@ input, textarea {
     }
 
     .header {
-        margin: 30% 2em 0;
+        margin: 15% 2em 0;
         text-align: right;
     }
 
