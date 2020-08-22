@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HTML CDN Security
+title: Secure includes from CDNs
 date: 2020-08-22
 preview: When including resources from CDNs, how do you ensure the security of the file, has it changed? is it the expected version?
 comments: true
@@ -9,7 +9,7 @@ categories:
     - "websecurity"
 ---
 
-# Introduction
+## Introduction
 
 With supply chain attacks becoming more prevalent, have you thought about what you include from CDNs on your website? Are you implicily trusting that the CDN is looking after the security for you? You have this awesome library that powers your site, but how do you know what gets loaded is what you expect, hasn't been manipulated, is the version you are expecting.... 
 
